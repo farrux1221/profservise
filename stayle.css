@@ -1,0 +1,719 @@
+
+        :root {
+            --primary-color: #E44D26; /* Kuchli Olovrang: Asosiy harakat ranggi */
+            --secondary-color: #F5F5F5; /* Ochiq Kulrang: Ochiq fonlar */
+            --accent-color: #FF8C00; /* To'q Sariq: Ikkinchi darajali urg'u */
+            --dark-color: #333333; /* To'q Kulrang: Asosiy matn */
+            --white-color: #FFFFFF;
+            --transition-speed: 0.4s;
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --shadow-deep: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+:root {
+    --primary-color: #E44D26;
+    --secondary-color: #F5F5F5;
+    --accent-color: #FF8C00;
+    --dark-color: #333333;
+    --white-color: #FFFFFF;
+    --transition-speed: 0.4s;
+    --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --shadow-deep: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Til almashtirgich */
+.language-switcher {
+    background: var(--dark-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Qolgan CSS kodlar oldingi kabi... */
+/* (Sizning oldingi CSS kodlaringizni shu yerga qo'shing) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--dark-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--white-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* Bo'lim Sarlavhasi */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            position: relative;
+            color: var(--dark-color);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color); /* Sariq urg'u */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Asosiy Tugma Stili */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all var(--transition-speed) ease;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .primary-btn {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .primary-btn:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-deep);
+        }
+
+        /* Navigatsiya Stili */
+        .main-nav {
+            background-color: var(--white-color);
+            box-shadow: var(--shadow-light);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .main-nav .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            padding: 8px 12px;
+            font-weight: 500;
+            transition: color var(--transition-speed);
+            font-size: 0.9rem;
+        }
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Mobil menyu uchun */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--dark-color);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /*==================================================
+           1. HERO SECTION (Qahramon Bo'limi)
+        ====================================================*/
+        .hero-complex {
+            position: relative;
+            background-color: var(--secondary-color); /* Ochiq kulrang fon */
+            padding: 100px 0 60px;
+            overflow: hidden;
+            min-height: 70vh;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Gradient: Oqdan Och Kulranggacha */
+            background: linear-gradient(rgba(105, 105, 231, 0.906),rgba(88, 234, 88, 0.611));
+            z-index: 1;
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-complex h1 {
+            font-size: 2.2rem;
+            color: var(--white-color);
+            margin-bottom: 15px;
+        }
+
+        .hero-complex .subtitle {
+            font-size: 1.1rem;
+            color: var(--white-color);
+            margin-bottom: 30px;
+        }
+
+        .hero-main-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .service-tech-image {
+            max-width: 90%;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: var(--shadow-deep);
+            animation: floatImage 4s ease-in-out infinite;
+            margin-bottom: 30px;
+        }
+
+        @keyframes floatImage {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .cta-box {
+            text-align: center;
+        }
+
+        /* Pulse Animatsiyasi (Olovrang rangda) */
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(228, 77, 38, 0.4); } 
+            70% { box-shadow: 0 0 0 25px rgba(228, 77, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(228, 77, 38, 0); }
+        }
+
+
+        /*==================================================
+           2. XIZMATLAR BO'LIMI (3D Flip Card)
+        ====================================================*/
+        .services-advanced {
+            background-color: var(--white-color);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            perspective: 1000px;
+        }
+
+        .service-card-3d {
+            background: transparent;
+            height: 280px;
+            position: relative;
+            cursor: pointer;
+            box-shadow: var(--shadow-light);
+            border-radius: 10px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            transform-style: preserve-3d;
+        }
+
+        .service-card-3d:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .card-face img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card-front {
+            background-color: var(--white-color);
+        }
+
+        .card-front .icon {
+            color: var(--primary-color); /* Olovrang Ikonka */
+            margin-bottom: 15px;
+        }
+
+        .card-back {
+            background-color: var(--primary-color); /* Olovrang Fon */
+            color: var(--white-color);
+            transform: rotateY(180deg);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .small-text, .small-link {
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: var(--accent-color); /* Sariq Urg'u */
+            text-decoration: none;
+        }
+
+
+        /*==================================================
+           3. BIZ HAQIMIZDA (Parallaks Scroll)
+        ====================================================*/
+        .about-parallactic {
+            position: relative;
+            height: auto;
+            min-height: 500px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white-color);
+            background-image: linear-gradient(rgba(105, 105, 231, 0.506),rgba(88, 234, 88, 0.411)),url(./jamoa.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+        }
+
+        .about-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Matnni o'qilishi uchun kulrang to'siq */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-deep);
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .about-text {
+            max-width: 100%;
+            margin: 20px auto 30px;
+            font-size: 1rem;
+        }
+
+        /* Statistika Grid */
+        .stats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 120px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--accent-color); /* Sariq Urg'u */
+            display: block;
+        }
+
+
+        /*==================================================
+           4. AFZALLIKLAR BO'LIMI
+        ====================================================*/
+        .advantages-dynamic {
+            background-color: var(--secondary-color); /* Och Kulrang Fon */
+        }
+
+        .advantage-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .advantage-card-hover {
+            padding: 25px;
+            border-radius: 10px;
+            background: var(--white-color);
+            text-align: center;
+            box-shadow: var(--shadow-light);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .advantage-card-hover:hover {
+            transform: translateY(-10px) rotateZ(-1deg);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            border-bottom: 5px solid var(--primary-color); /* Olovrang Chiziq */
+        }
+
+        .advantage-card-hover .icon {
+            color: var(--primary-color); /* Olovrang Ikonka */
+            margin-bottom: 15px;
+            transition: transform var(--transition-speed);
+            font-size: 2.5rem;
+        }
+
+        .contact-form-section {
+            background-color: var(--white-color);
+        }
+
+        .contact-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-info-panel {
+            padding: 25px;
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: var(--secondary-color); /* Och Kulrang Panel */
+        }
+
+        .contact-info-panel i {
+            color: var(--primary-color); /* Olovrang Ikonka */
+            margin-right: 10px;
+        }
+
+        .map-placeholder {
+            height: 250px;
+            background-color: #eee;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            overflow: hidden;
+        }
+        .map-placeholder iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /*==================================================
+           6. FOOTER (Pastki Qism)
+        ====================================================*/
+        .footer-dark {
+            background-color: var(--dark-color); /* To'q Kulrang Fon */
+            color: var(--white-color);
+            padding: 30px 0;
+        }
+
+        .footer-content-flex {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo {
+            max-width: 150px;
+        }
+
+        .social-links-footer {
+            text-align: center;
+        }
+
+        .social-links-footer a {
+            color: var(--white-color);
+            font-size: 22px;
+            margin: 0 10px;
+            transition: color var(--transition-speed), transform var(--transition-speed);
+            display: inline-block;
+        }
+
+        .social-links-footer a:hover {
+            color: var(--accent-color); /* Sariq Urg'u */
+            transform: scale(1.2);
+        }
+
+        .footer-links-quick {
+            text-align: center;
+        }
+
+        .footer-links-quick ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links-quick a {
+            color: #ccc;
+            text-decoration: none;
+            line-height: 2;
+            transition: color var(--transition-speed);
+        }
+        .footer-links-quick a:hover {
+            color: var(--primary-color); /* Olovrang Urg'u */
+        }
+
+        .copyright-text {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /*==================================================
+           YOPISHQOQ TELEGRAM FAB (Floating Action Button)
+        ====================================================*/
+        .fixed-chat-fab {
+            position: fixed;
+            bottom: 30px; /* Pastdan masofa */
+            right: 50px; /* O'ngdan masofa */
+            z-index: 1000;
+            
+            /* Tugmaning o'lchami va shakli */
+            width: 50px; 
+            height: 50px;
+            padding: 0;
+            border-radius: 50%; 
+            
+            /* Joylashuv va Ikonka rangi */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* Telegramning Tanish Moviy Rangi */
+            background-color: #0088cc; 
+            color: var(--white-color);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+            
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            
+            /* Diqqatni jalb qilish animatsiyasi */
+            animation: telegramPulse 2s infinite; 
+        }
+
+        .chat-icon {
+            font-size: 1.5rem; /* Telegram logotipining o'lchami */
+        }
+
+        .fixed-chat-fab:hover {
+            background-color: #006699; 
+            transform: scale(1.1); 
+            animation: none;
+        }
+
+        /* Telegram Pulse Animatsiyasi (Moviy rangda) */
+        @keyframes telegramPulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.5); } 
+            70% { box-shadow: 0 0 0 25px rgba(0, 136, 204, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 136, 204, 0); }
+        }
+
+        /* Yopishqoq bog'lanish tugmasi */
+        .fixed-cta-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 50px;
+            z-index: 1000;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: var(--shadow-deep);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        /*==================================================
+           RESPONSIVE DIZAYN (Mukammal Mobil Ko'rinish)
+        ====================================================*/
+
+        /* KICHIK PLANSHE va KATTA TELEFONLAR (768px gacha) */
+        @media (max-width: 768px) {
+            /* Navigatsiya */
+            .menu-toggle {
+                display: flex;
+                overflow-x: hidden;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 80%;
+                height: calc(100vh - 70px);
+                background-color: var(--white-color);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 40px;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .nav-links a {
+                font-size: 1.1rem;
+                padding: 10px 20px;
+            }
+            
+            /* Hero */
+            .hero-complex h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-complex .subtitle {
+                font-size: 1rem;
+            }
+            
+            /* Xizmatlar */
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            /* Statistika */
+            .stats-grid {
+                gap: 15px;
+            }
+            
+            .stat-item {
+                min-width: 45%;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* TELEFONLAR (480px gacha) */
+        @media (max-width: 480px) {
+            body{
+                overflow-x: hidden;
+            }
+            .container {
+                padding: 0 15px;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+                margin-bottom: 30px;
+            }
+            
+            .hero-complex {
+                padding: 80px 0 40px;
+            }
+            
+            .hero-complex h1 {
+                font-size: 1.6rem;
+            }
+            
+            .service-card-3d {
+                height: 250px;
+            }
+            
+            .card-face img {
+                height: 120px;
+            }
+            
+            .stats-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stat-item {
+                width: 80%;
+            }
+            
+            .fixed-cta-btn {
+                font-size: 0.8rem;
+                padding: 15px 25px;
+            }
+            
+            .fixed-cta-btn span {
+                display: none;
+            }
+        }
+  

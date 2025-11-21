@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProffServis - Heating and Water Supply Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="stayle.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <div class="container">
+            <button class="lang-btn active" data-lang="ru">RU</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="uz">UZ</button>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo" data-key="logo">ProffServis.uz</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-key="nav.home">Главная</a></li>
+                <li><a href="#services" data-key="nav.services">Услуги</a></li>
+                <li><a href="#about" data-key="nav.about">О нас</a></li>
+                <li><a href="#advantages" data-key="nav.advantages">Преимущества</a></li>
+                <li><a href="#contact" data-key="nav.contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="hero-complex" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-wrapper">
+            <h1 data-aos="fade-down" data-aos-duration="1000" data-key="hero.title">Инновационные решения для вашего комфорта</h1>
+            <p class="subtitle" data-aos="fade-down" data-aos-delay="300" data-key="hero.subtitle">Профессионализм и гарантия в каждой услуге.</p>
+            
+            <div class="hero-main-area">
+                <img src="./ChatGPT Image Nov 13, 2025, 10_17_29 AM.png" alt="Service Equipment" class="service-tech-image" data-aos="zoom-in" data-aos-delay="500">
+                <div class="cta-box">
+                    <a href="#contact" class="btn primary-btn pulse-animation" data-aos="zoom-in" data-aos-delay="700" data-key="hero.cta">🚀 Связаться с нами</a>
+                    <p data-key="hero.support">Круглосуточная служба поддержки</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-advanced" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right" data-key="services.title">Наши услуги</h2>
+            <div class="service-grid">
+                <div class="service-card-3d" data-aos="flip-left" data-aos-duration="1200">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <img src="./mantaj.jpg" alt="Boiler Installation">
+                            <h3 data-key="services.1.title">Монтаж и сервис котлов</h3>
+                            <p class="small-text" data-key="services.click">Нажмите для подробной информации.</p>
+                        </div>
+                        <div class="card-face card-back">
+                            <p data-key="services.1.description">Устанавливаем экономичные и надежные системы отопления на основе новейших технологий.</p>
+                            <a href="#" class="small-link" data-key="services.more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-3d" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="100">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                           <img src="./radiator.jpg" alt="Radiator Systems">
+                            <h3 data-key="services.2.title">Радиаторные системы</h3>
+                            <p class="small-text" data-key="services.click">Нажмите для подробной информации.</p>
+                        </div>
+                        <div class="card-face card-back">
+                            <p data-key="services.2.description">Проектирование и монтаж современных высокоэффективных радиаторов.</p>
+                            <a href="#" class="small-link" data-key="services.more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-3d" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                          <img src="./issiqsuv.jpg" alt="Hot Water Supply">
+                            <h3 data-key="services.3.title">Горячее водоснабжение (ГВС)</h3>
+                            <p class="small-text" data-key="services.click">Нажмите для подробной информации.</p>
+                        </div>
+                        <div class="card-face card-back">
+                            <p data-key="services.3.description">Гарантируем бесперебойную и безопасную систему горячего водоснабжения.</p>
+                            <a href="#" class="small-link" data-key="services.more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card-3d" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="300">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                           <img src="./servise.jpg" alt="Maintenance Service">
+                            <h3 data-key="services.4.title">Комплексное профилактическое обслуживание</h3>
+                            <p class="small-text" data-key="services.click">Нажмите для подробной информации.</p>
+                        </div>
+                        <div class="card-face card-back">
+                            <p data-key="services.4.description">Постоянное сервисное обслуживание для долговечности всех систем отопления и водоснабжения.</p>
+                            <a href="#" class="small-link" data-key="services.more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-parallactic" id="about">
+        <div class="container about-content">
+            <h2 class="section-title text-white" data-aos="fade-up" data-key="about.title">Профессиональная команда. Качественный результат.</h2>
+            <p class="about-text text-white" data-aos="fade-up" data-aos-delay="200" data-key="about.description">
+                Наша компания состоит из сертифицированных специалистов с многолетним опытом. Каждый проект, независимо от его сложности, выполняется в соответствии с высокими стандартами качества. Доверие наших клиентов - наш приоритет.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <span class="stat-number">15+</span>
+                    <p data-key="about.stats.1">Лет опыта</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                    <span class="stat-number">500+</span>
+                    <p data-key="about.stats.2">Успешных проектов</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
+                    <span class="stat-number">20+</span>
+                    <p data-key="about.stats.3">Квалифицированных специалистов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages-dynamic" id="advantages">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-left" data-key="advantages.title">Почему именно ProffServis?</h2>
+            <div class="advantage-grid">
+                <div class="advantage-card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <i class="icon fas fa-shield-alt"></i>
+                    <h3 data-key="advantages.1.title">100% Надежность</h3>
+                    <p data-key="advantages.1.description">Используем только проверенное и гарантированное оборудование.</p>
+                </div>
+
+                <div class="advantage-card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <i class="icon fas fa-graduation-cap"></i>
+                    <h3 data-key="advantages.2.title">Большой опыт</h3>
+                    <p data-key="advantages.2.description">Имеем многолетний практический опыт и глубокие знания в отрасли.</p>
+                </div>
+
+                <div class="advantage-card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <i class="icon fas fa-star-half-alt"></i>
+                    <h3 data-key="advantages.3.title">Гарантия высокого качества</h3>
+                    <p data-key="advantages.3.description">Предоставляем официальную гарантию на наши работы и установленные системы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-key="contact.title">Свяжитесь с нами</h2>
+            <div class="contact-grid">
+                <div class="contact-info-panel" data-aos="fade-right">
+                    <h3 data-key="contact.direct">Свяжитесь с нами напрямую</h3>
+                    <p><i class="fas fa-phone-alt"></i> <span data-key="contact.phone">Телефон</span>: <a href="tel:+998976829999"><strong>+998 (33) 682-99-99</strong></a></p>
+                    <p><i class="fab fa-telegram-plane"></i> Telegram: <a href="https://t.me/+998976829999">@ProffServisAdmin</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-key="contact.address">Адрес</span>: г. Ташкент, Янги хаёт, Янги дархон, 53 дом</p>
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1383.382731879156!2d69.1887228442693!3d41.21660299775678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDEyJzU5LjgiTiA2OcKwMTEnMjIuMCJF!5e1!3m2!1sru!2s!4v1763538037468!5m2!1sru!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="footer-content-flex">
+                <div class="footer-brand">
+                    <div class="logo" data-key="logo">ProffServis.uz</div>
+                    <!-- <p class="copyright-text" data-key="footer.copyright">&copy; 2025 ProffServis. Все права защищены.</p> -->
+                </div>
+                <div class="social-links-footer">
+                    <h4 data-key="footer.social">Социальные сети</h4>
+                   
+                    <a href="https://www.instagram.com/proffservis.uz?igsh=NTN3YTltMnAxODF1" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/+998976829999" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+                <div class="footer-links-quick">
+                    <h4 data-key="footer.links">Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#services" data-key="nav.services">Услуги</a></li>
+                        <li><a href="#advantages" data-key="nav.advantages">Преимущества</a></li>
+                        <li><a href="#contact" data-key="nav.contact">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="tel:+998976829999" class="fixed-cta-btn" aria-label="Contact Button">
+        <div class="cta-inner-content">
+            <i class="fas fa-phone-alt phone-icon"></i>
+            <span data-key="cta.button">БЫСТРАЯ СВЯЗЬ</span>
+        </div>
+        <a href="https://t.me/+998976829999" target="_blank" class="fixed-chat-fab telegram-btn" aria-label="Telegram Chat">
+            <i class="fab fa-telegram-plane chat-icon"></i> 
+        </a>
+    </a>
+    
+   
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
