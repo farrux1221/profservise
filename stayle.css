@@ -182,7 +182,10 @@
             width: 100%;
             height: 100%;
             /* Gradient: Oqdan Och Kulranggacha */
-            background: linear-gradient(rgba(105, 105, 231, 0.906),rgba(88, 234, 88, 0.611));
+            background: linear-gradient(rgba(105, 105, 231, 0.906),rgba(88, 234, 88, 0.611)),url(./servise.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             z-index: 1;
         }
 
