@@ -15,18 +15,24 @@ const translations = {
         "hero.support": "Круглосуточная служба поддержки",
         
         // Xizmatlar
-        "services.title": "Наши услуги",
-        "services.click": "Нажмите для подробной информации.",
-        "services.more": "Подробнее",
-        "services.1.title": "Монтаж и сервис котлов",
-        "services.1.description": "Устанавливаем экономичные и надежные системы отопления на основе новейших технологий.",
-        "services.2.title": "Радиаторные системы",
-        "services.2.description": "Проектирование и монтаж современных высокоэффективных радиаторов.",
-        "services.3.title": "Горячее водоснабжение (ГВС)",
-        "services.3.description": "Гарантируем бесперебойную и безопасную систему горячего водоснабжения.",
-        "services.4.title": "Комплексное профилактическое обслуживание",
-        "services.4.description": "Постоянное сервисное обслуживание для долговечности всех систем отопления и водоснабжения.",
         
+            "services.title": "Наши услуги",
+            "services.click": "Нажмите для подробной информации.",
+            "services.more": "Подробнее",
+          
+            "services.1.title": "Ремонт газовых котлов",
+            "services.1.description": "Диагностика, ремонт и полное техническое обслуживание котлов любой сложности.",
+          
+            "services.2.title": "Техническое обслуживание котлов",
+            "services.2.description": "Регулярная профилактика для безопасной и стабильной работы котла.",
+          
+            "services.3.title": "Ремонт промышленных котлов",
+            "services.3.description": "Качественный ремонт, настройка и замена комплектующих для промышленных котлов.",
+          
+            "services.4.title": "Ремонт паровых котлов",
+            "services.4.description": "Профессиональная диагностика, настройка автоматики и ремонт паровых котлов."
+          ,
+          
         // Biz haqimizda
         "about.title": "Профессиональная команда. Качественный результат.",
         "about.description": "Наша компания состоит из сертифицированных специалистов с многолетним опытом. Каждый проект, независимо от его сложности, выполняется в соответствии с высокими стандартами качества. Доверие наших клиентов - наш приоритет.",
@@ -74,17 +80,24 @@ const translations = {
         "hero.support": "24/7 Support Service",
         
         // Services
-        "services.title": "Our Services",
-        "services.click": "Click for detailed information.",
-        "services.more": "Learn More",
-        "services.1.title": "Boiler Installation and Service",
-        "services.1.description": "We install economical and reliable heating systems based on the latest technologies.",
-        "services.2.title": "Radiator Systems",
-        "services.2.description": "Design and installation of modern high-efficiency radiators.",
-        "services.3.title": "Hot Water Supply (HWS)",
-        "services.3.description": "We guarantee uninterrupted and safe hot water supply systems.",
-        "services.4.title": "Comprehensive Preventive Maintenance",
-        "services.4.description": "Continuous service maintenance for the longevity of all heating and water systems.",
+        
+            "services.title": "Our Services",
+            "services.click": "Click for more information.",
+            "services.more": "Read more",
+          
+            "services.1.title": "Gas Boiler Repair",
+            "services.1.description": "Diagnostics, repair and full technical maintenance for boilers of any complexity.",
+          
+            "services.2.title": "Boiler Maintenance",
+            "services.2.description": "Regular preventive maintenance for safe and reliable operation of your boiler.",
+          
+            "services.3.title": "Industrial Boiler Repair",
+            "services.3.description": "High-quality repair, adjustment and spare parts replacement for industrial boilers.",
+          
+            "services.4.title": "Steam Boiler Repair",
+            "services.4.description": "Professional diagnostics, automation setup and repair of steam boilers."
+          
+          ,
         
         // About Us
         "about.title": "Professional Team. Quality Result.",
@@ -133,17 +146,24 @@ const translations = {
         "hero.support": "24/7 qo'llab-quvvatlash xizmati",
         
         // Xizmatlar
-        "services.title": "Bizning Xizmatlar",
-        "services.click": "Batafsil ma'lumot uchun bosing.",
-        "services.more": "Ko'proq ma'lumot",
-        "services.1.title": "Kotellar Montaji va Servisi",
-        "services.1.description": "Eng so'nggi texnologiyalar asosida tejamkor va ishonchli isitish tizimlarini o'rnatamiz.",
-        "services.2.title": "Radiator Tizimlari",
-        "services.2.description": "Zamonaviy, yuqori samarali radiatorlarni loyihalash va montaj qilish xizmati.",
-        "services.3.title": "Issiq Suv Ta'minoti (GVS)",
-        "services.3.description": "Uzluksiz va xavfsiz issiq suv ta'minoti tizimini kafolatlaymiz.",
-        "services.4.title": "Kompleks Profilaktik Servis",
-        "services.4.description": "Barcha isitish va suv tizimlarining uzoq umr ko'rishi uchun doimiy servis.",
+        
+            "services.title": "Bizning xizmatlar",
+            "services.click": "Batafsil ma'lumot uchun bosing.",
+            "services.more": "Ko‘proq o‘qish",
+          
+            "services.1.title": "Gaz qozonlarini ta'mirlash",
+            "services.1.description": "Har qanday murakkablikdagi qozonlarni diagnostika qilish, ta'mirlash va to‘liq texnik xizmat ko‘rsatish.",
+          
+            "services.2.title": "Gaz qozonlariga texnik xizmat",
+            "services.2.description": "Qozonning xavfsiz va ishonchli ishlashi uchun muntazam profilaktik xizmatlar.",
+          
+            "services.3.title": "Sanoat qozonlarini ta'mirlash",
+            "services.3.description": "Sanoat qozonlarida sifatli ta'mirlash, sozlash va ehtiyot qismlarni almashtirish.",
+          
+            "services.4.title": "Bug‘ qozonlarini ta'mirlash",
+            "services.4.description": "Bug‘ qozonlarida diagnostika, avtomatika sozlash va professional ta'mirlash xizmatlari."
+          
+          ,
         
         // Biz haqimizda
         "about.title": "Professional Jamoa. Sifatli Natija.",
